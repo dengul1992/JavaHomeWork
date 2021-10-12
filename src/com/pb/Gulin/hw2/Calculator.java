@@ -18,41 +18,57 @@ public class Calculator {
         if (symbol.equals("+")  || symbol.equals("-")  || symbol.equals("*")  || symbol.equals("/") ) {
             switch (symbol) {
                 case ("+"): {
-                    System.out.println("x + y = "+ (x+y));
+//                    System.out.println("x + y = "+ (x+y));
+                    System.out.println(x +" + "+ y +" = "+ (x+y));
                     break;
                 }
                 case ("-"): {
-                    System.out.println("x - y = "+ (x-y));
+//                    System.out.println("x - y = "+ (x-y));
+                    System.out.println(x +" - "+ y +" = "+ (x-y));
                     break;
                 }
                 case ("*"): {
-                    System.out.println("x * y = "+ (x*y));
+//                    System.out.println("x * y = "+ (x*y));
+                    System.out.println(x +" * "+ y +" = "+ (x*y));
                     break;
                 }
                 case ("/"): {
-                    System.out.println("x / y = " + (x/y));
+//                    System.out.println("x / y = " + (x/y));
+                    if (y==0){
+                        System.out.println(" На 0 делить нельзя!");
+                    } else {
+                        System.out.println(x +" / "+ y +" = "+ (x/y));
+                    }
                     break;
                 }
             }
         } else {
-            System.out.println("Введите оператор из предложенных : +, -, *, /");
+            System.out.println("Не корректный оператор. Введите оператор из предложенных : +, -, *, /");
             symbol= scan.next();
             if (symbol.equals("+")  || symbol.equals("-")  || symbol.equals("*")  || symbol.equals("/")) {
                 switch (symbol) {
                     case ("+"): {
-                        System.out.println("x + y = "+ (x+y));
+//                    System.out.println("x + y = "+ (x+y));
+                        System.out.println(x +" + "+ y +" = "+ (x+y));
                         break;
                     }
                     case ("-"): {
-                        System.out.println("x - y = "+ (x-y));
+//                    System.out.println("x - y = "+ (x-y));
+                        System.out.println(x +" - "+ y +" = "+ (x-y));
                         break;
                     }
                     case ("*"): {
-                        System.out.println("x * y = "+ (x*y));
+//                    System.out.println("x * y = "+ (x*y));
+                        System.out.println(x +" * "+ y +" = "+ (x*y));
                         break;
                     }
                     case ("/"): {
-                        System.out.println("x / y = " + (x/y));
+//                    System.out.println("x / y = " + (x/y));
+                        if (y==0){
+                            System.out.println(" На 0 делить нельзя!");
+                        } else {
+                        System.out.println(x +" / "+ y +" = "+ (x/y));
+                        }
                         break;
                     }
                 }
