@@ -7,10 +7,10 @@ public class Calculator {
         int x,y;
         String symbol;
         Scanner scan= new Scanner (System.in);
-        System.out.println("Введите значение x:");
+        System.out.println("Введите целое значение operand1:");
         x= scan.nextInt();
 
-        System.out.println("Введите значение y:");
+        System.out.println("Введите целое значение operand2:");
         y= scan.nextInt();
 
         System.out.println("Введите математический оператор : +, -, *, /");
