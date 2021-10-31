@@ -14,12 +14,10 @@ public class CapitalLetter {
         Scanner scan = new Scanner(System.in);
         String w;
         System.out.println("Введите предложение и я переведу все первые буквы слов в верхний регистр) ...");
-        w= scan.next();
-        w=firstUpperCase(w);
-        System.out.println(w);
-
-        while (){
-
+        w= scan.nextLine();
+        String[] wArray = w.split("\\s");
+        for (String human : wArray) {
+            System.out.print(firstUpperCase(human)+" ");
         }
     }
     }
