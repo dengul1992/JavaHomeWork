@@ -15,6 +15,8 @@ public class Reader {
         this.Phone = Phone;
     }
 
+
+
     public void setFIO(String FIO) {
         this.FIO = FIO;
     }
@@ -54,4 +56,18 @@ public class Reader {
     public String getPhone() {
         return Phone;
     }
+
+    public String takeBook(int count) {
+        return this.FIO+" взял "+ count +" книги" ;
+    }
+
+    public String returnBook(int count) {
+        return this.FIO+" вернул "+ count +" книги" ;
+    }
+    /*public String takeBook() {
+
+        return this.FIO+" взял книги: "+  book.getBookName();
+    }*/
+
+
 }

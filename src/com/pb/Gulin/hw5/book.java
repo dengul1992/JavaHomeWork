@@ -1,15 +1,20 @@
 package com.pb.Gulin.hw5;
 
 public class book {
-    private String BookName;
-    private String BookAuthor;
-    private String BookYear;
+    private  String BookName;
+    private  String BookAuthor;
+    private  String BookYear;
 
     public void Book(String BookName, String BookAuthor, String BookYear) {
         this.BookName=BookName;
         this.BookAuthor=BookAuthor;
         this.BookYear=BookYear;
     }
+
+    public String BookInfo () {
+        return this.BookName+" ("+this.BookAuthor+" "+this.BookYear+")";
+    }
+
 
     public void setBookName(String bookName) {
         BookName = bookName;
