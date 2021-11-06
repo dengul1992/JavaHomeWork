@@ -57,17 +57,34 @@ public class Reader {
         return Phone;
     }
 
-    public String takeBook(int count) {
-        return this.FIO+" взял "+ count +" книги" ;
+    public void takeBook(int count) {
+
+        System.out.println (this.FIO+" взял "+ count +" книги") ;
     }
 
-    public String returnBook(int count) {
-        return this.FIO+" вернул "+ count +" книги" ;
-    }
-    /*public String takeBook() {
+    public void takeBook(String... BookNames) {
 
-        return this.FIO+" взял книги: "+  book.getBookName();
-    }*/
+        System.out.println ( this.FIO+ " взял такие книги: "+BookNames) ;
+    }
+    public void takeBook(book... books) {
+
+        System.out.println (this.FIO+ " взял такие книги: "+books);
+    }
+
+
+    public void returnBook(int count) {
+
+        System.out.println (this.FIO+" вернул "+ count +" книги") ;
+    }
+    public void returnBook(String... BookNames) {
+
+        System.out.println (this.FIO+ " взял такие книги: "+BookNames) ;
+    }
+
+    public void returnBook(book... books) {
+
+        System.out.println (this.FIO+ " взял такие книги: "+books) ;
+    }
 
 
 }

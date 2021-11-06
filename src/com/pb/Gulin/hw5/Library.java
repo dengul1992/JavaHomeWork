@@ -19,11 +19,12 @@ public class Library {
         reader2.Reader("Странный А. В.", 234567, "Механики", "14.09.1975", "+38(056)765-65-65");
         reader3.Reader("Помидоркин В. И.", 345678, "Микробиологии", "05.10.1986", "+38(050)800-12-23");
 
-        System.out.println (reader1.takeBook(3));
-        System.out.println (reader1.getFIO()+ " взял такие книги: "+book1.getBookName()+", " +book2.getBookName()+", " +book3.getBookName()+". ");
+        reader1.takeBook(3);
+        reader1.takeBook(book1.getBookName());
+//    book1.getBookName()+", " +book2.getBookName()+", " +book3.getBookName()+". ");
         System.out.println (reader1.getFIO()+ " взял книги: "+book1.BookInfo()+", " +book2.BookInfo()+", " +book3.BookInfo()+". ");
 
-        System.out.println (reader1.returnBook(3));
+        reader1.returnBook(3);
         System.out.println (reader1.getFIO()+ " вернул такие книги: "+book1.getBookName()+", " +book2.getBookName()+", " +book3.getBookName()+". ");
         System.out.println (reader1.getFIO()+ " вернул книги: "+book1.BookInfo()+", " +book2.BookInfo()+", " +book3.BookInfo()+". ");
 
