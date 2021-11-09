@@ -1,15 +1,23 @@
 package com.pb.Gulin.hw6;
 
 public class Animal {
-    private  String food, location;
+    public String food,location;
 
-    public void makeNoise () {
-        System.out.println("Голос!");
+    public Animal(String food, String location) {
+        this.food = food;
+        this.location = location;
     }
-    public void eat () {
-        System.out.println("Еда!");
+    public void eat(){
+        System.out.println("Еда");
     }
-    public void sleep () {
-        System.out.println("Спать!");
+
+    public void makeNoise(){
+        System.out.println("Звук издаваемый довольным животным");
     }
+
+    public void sleep(){
+        System.out.println("Сплю...");
+    }
+
 }
+
